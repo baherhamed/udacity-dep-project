@@ -1,12 +1,14 @@
 branch-defaults:
+  main:
+    environment: Newapp-env-2
   master:
     environment: Newapp-env-2
+deploy:
+  artifact: cd udagram/udagram-api/www/
 environment-defaults:
   Newapp-env-2:
     branch: null
     repository: null
-deploy:
-  artifact: cd udagram/udagram-api/www/
 global:
   application_name: new-app
   default_ec2_keyname: baher
